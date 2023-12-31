@@ -43,3 +43,51 @@ let sumNumber = 3;
 let sumNumbertostring = String(sumNumber);
 console.log(sumNumbertostring);//for converting it into string
 console.log(typeof sumNumbertostring);
+
+
+
+//*********************operation************//
+
+let values = 3;
+let negvalue = -values;
+console.log(negvalue);
+
+console.log(2+2);
+console.log(2-2);
+console.log(2*2);
+console.log(2/2);
+console.log(2%2);
+console.log(2&2);
+
+
+
+let str1 = "hello"
+let str2 = " hitesh"
+let str3 = str1 + str2;
+console.log(str3);
+
+str4 = 1 +"2"
+console.log(1 +"2");
+console.log("1"+2);
+console.log(typeof str4);
+
+
+console.log("1" + 2 +2);
+console.log(1 + 2 +"2");//agar string se phle koi sa sum karaoge to to ho jayega varna agar string phle aa gyi to pura code string me convert ho jayega
+
+
+console.log(true);//this give true 
+console.log(+true);//this will give the output as 1
+// console.log(true+);//this will thrown an error
+console.log(+"");//this will give valuee as zero because empty string give you a false value
+
+let num1,num2,num3;
+num1 = num2 = num3 =2+2;
+console.table([num1,num2,num3]);
+
+
+let gamecounter = 100;
+gamecounter++;
+++gamecounter;
+console.log(gamecounter);
+
