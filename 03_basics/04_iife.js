@@ -7,7 +7,7 @@ two();
 
 //now how to use iife syntax ()();
 
-(function two(){
+(function two(){      //named iife
     console.log(`DB connected`);
 })  ();  //last semicolon lagana jaruri hai nahi to error ayega
 

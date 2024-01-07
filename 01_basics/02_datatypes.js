@@ -29,5 +29,5 @@ console.log(3
     
     console.log(typeof null);//gaves you a object as output
     console.log(typeof undefined);//gaves you undefined as output.
-c
+
 
