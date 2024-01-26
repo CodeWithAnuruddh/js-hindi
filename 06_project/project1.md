@@ -1,6 +1,6 @@
 # Project related to DOM
 
-## Project link
+## Color Changer
 
 [click here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html)
 
