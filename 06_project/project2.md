@@ -2,8 +2,6 @@
 
 ## dividing an adult's weight in kilograms by their height in metres squared.
 
-[click here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html)
-
 ```javascript
 function calcBMI() {
   var weight = document.bmiform.pounds.value, height = document.bmiform.inches.value;
