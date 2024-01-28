@@ -3,10 +3,26 @@
 ## dividing an adult's weight in kilograms by their height in metres squared.
 
 ```javascript
-function calcBMI() {
-  var weight = document.bmiform.pounds.value, height = document.bmiform.inches.value;
-  document.bmiform.bmi.value = parseInt((weight * 703) / (height * height));
-} 
+document.addEventListener('DOMContentLoaded', () => {
+
+  let kg = document.querySelector('#kilograms');
+  let cm = document.querySelector('#Centimeters');
+  let bmiResult = document.querySelector('#bmi');
+  let form = document.querySelector('form');
+
+  const submit = document.querySelector('#sbt');
+  submit.addEventListener('click', function(e){
+    e.preventDefault(); 
+    let weight = parseFloat(kg.value);
+    console.log(weight)
+    let height = parseFloat(cm.value) / 100; 
+    console.log(height)
+    const bmi = weight / (height * height); 
+    console.log(bmi)
+    bmiResult.value = `BMI: ${bmi.toFixed(2)}`; 
+  });
+
+});
 ```
 
 ```html
@@ -19,27 +35,36 @@ function calcBMI() {
   </head>
   <body>
     <div>
-      <p id="intro">Calculate your BMI (body mass index) by using the form below. Enter your weight and height and click the Calculate button to display your BMI result.</p>
+      <p id="intro">
+        Calculate your BMI (body mass index) by using the form below. Enter your
+        weight and height and click the Calculate button to display your BMI
+        result.
+      </p>
       <form action="none" method="post" name="bmiform">
         <fieldset>
-        <legend>Height and Weight</legend>
-          <label for="pounds">Weight (pounds):</label>
-          <input type="text" name="pounds" id="pounds">
-          <br>
-          <label for="inches">Height (inches):</label>
-          <input type="text" name="inches" id="inches">
-          <br>
-          <button type="button" name="calculate" value="Calculate your BMI" onclick="calcBMI()">Calculate your BMI</button>
+          <legend>Height and Weight</legend>
+          <label for="kilograms">Weight (pounds):</label>
+          <input type="text" name="Kilograms" id="kilograms" />
+          <br />
+          <label for="Centimeters">Height (inches):</label>
+          <input type="text" name="Centimeters" id="Centimeters" />
+          <br />
+          <input
+            type="submit"
+            name="calculate"
+            value="Calculate your BMI"
+            id = 'sbt'> 
         </fieldset>
         <fieldset>
-        <legend>BMI</legend>
+          <legend>BMI</legend>
           <label for="bmi" id="bmi_label">Your calculated BMI is:</label>
-          <input type="text" name="bmi" id="bmi" readonly="readonly">
+          <input type="text" name="bmi" id="bmi" readonly="readonly" />
         </fieldset>
       </form>
     </div>
   </body>
 </html>
+
 
 ```
 
