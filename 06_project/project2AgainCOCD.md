@@ -2,7 +2,6 @@
 
 ## dividing an adult's weight in kilograms by their height in metres squared.
 
-[click here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html)
 
 ```javascript
 document.addEventListener('DOMContentLoaded', function () {
